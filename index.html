@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="https://corporate-loans.s3.amazonaws.com/minifiedJS/index.js"></script>
+</head>
+
+<button onclick="payWithCredPal()" type="button">Pay With CredPal</button>
+
+<body>
+    <script>
+        const payWithCredPal = () => {
+            const checkout = new Checkout({
+                key: 'Your Key', //Your Key
+                amount: 50000,
+                product: 'Macbook Pro',
+                onClose: () => console.log("Widget closed"),
+                onLoad: () => console.log("Widget loaded successfully"),
+                onError: (error) => console.log(error),
+                onSuccess: (data) => {
+                    success(data)
+                    checkout.close()
+                }
+            });
+            checkout.setup();
+
+            return checkout.open();
+        }
+
+        const success = (data) => console.log(data)
+    </script>
+</body>
+
+</html>
