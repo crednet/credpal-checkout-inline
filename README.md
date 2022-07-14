@@ -35,7 +35,7 @@ Quickly embed CredPal Checkout in your website using our Inline JavaScript integ
 </script>
 ```
 
-onSuccess response
+`onSuccess` response
 If you specified a onSuccess function in your request, we will send you a response like the one below. when the transaction is successfully completed:
 
 ```javascript
@@ -54,7 +54,7 @@ If you specified a onSuccess function in your request, we will send you a respon
 }
 ```
 
-onError response
+`onError` response
 If you specified a onError function in your request, we will send you a response like the one below. when the transaction failed:
 
 ```javascript
