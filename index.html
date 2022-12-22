@@ -3,9 +3,38 @@
 
 <head>
     <script type="text/javascript" src="https://corporate-loans.s3.amazonaws.com/minifiedJS/index.js"></script>
+
+    <style>
+     .container {
+  height: 400px;
+  position: relative;
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#button {
+background-color: #274FED;
+color: #fff;
+padding: 15px;
+border: 1px solid #274FED;
+border-radius: 6px;
+}
+
+</style>
 </head>
 
-<button onclick="payWithCredPal()" type="button">Pay With CredPal</button>
+<div class="container">
+    <button class="center" id="button" onclick="payWithCredPal()" type="button">Pay With CredPal</button>
+
+</div>
 
 <body>
     <script>

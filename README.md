@@ -2,6 +2,7 @@
 
 Quickly embed CredPal Checkout in your website using our Inline JavaScript integration flow
 
+Try out an example [here](https://crednet.github.io/credpal-checkout-inline/)
 
 
 Below is a basic example of how to embed our plugin in your website.
