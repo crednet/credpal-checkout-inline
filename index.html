@@ -28,21 +28,44 @@ border: 1px solid #274FED;
 border-radius: 6px;
 }
 
+input:invalid {
+    border: 3px solid red;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
 </style>
 </head>
 
-<div class="container">
-    <button class="center" id="button" onclick="payWithCredPal()" type="button">Pay With CredPal</button>
+<div class="container center">
+    <form >
+        <label for="description">Product Description:</label><br>
+        <input type="text" id="description" name="description" value="MacBook Pro 2024"><br>
+        <br>
+        <label for="amount">Amount:</label>
+        <br>
+        <input type="text" id="amount" name="amount" pattern="[0-9]+" value="200">
+      </form>
+      <br>
+    <button class="" id="button" onclick="payWithCredPal()" type="button">Pay With CredPal</button>
 
 </div>
 
 <body>
     <script>
         const payWithCredPal = () => {
+            const description = document.getElementById("description").value;
+            const amount = document.getElementById("amount").value;
+            console.log(amount)
+            console.log(description)
             const checkout = new Checkout({
                 key: '9a783786-e22b-4bb0-8ad4-639a87a4bb1c', //Your Key
-                amount: 50000,
-                product: 'Macbook Pro',
+                amount: Number(amount),
+                product: description,
                 onClose: () => console.log("Widget closed"),
                 onLoad: () => console.log("Widget loaded successfully"),
                 onError: (error) => console.log(error),
