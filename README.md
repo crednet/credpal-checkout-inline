@@ -1,13 +1,13 @@
 # CredPal Inline Checkout
 
-Quickly embed CredPal Checkout in your website using our Inline JavaScript integration flow
+Quickly embed CredPal Checkout in your website using our Inline JavaScript integration flow. Our popup handles the payment and returns responses using callback functions. 
 
 Try out an example [here](https://crednet.github.io/credpal-checkout-inline/)
 
 
 Below is a basic example of how to embed our plugin in your website.
 
-add our minified js script to your head file in your website
+add our minified js script to the head file of your website
 ```html
 <head>
  <script
