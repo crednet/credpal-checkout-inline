@@ -12,7 +12,7 @@ add our minified js script to the head file of your website
 <head>
  <script
   type="text/javascript"
-  src="https://corporate-loans.s3.amazonaws.com/minifiedJS/index.js"
+  src="https://corporate-loans.obs.sa-brazil-1.myhuaweicloud.com/minifiedJS/index.js"
  ></script>
 </head>
 ```
